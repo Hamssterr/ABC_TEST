@@ -6,9 +6,8 @@ Backend NestJS xử lý Customer, Product, báo giá, Gemini AI, background job,
 
 Không cần cài đặt hoặc cấu hình môi trường.
 
-- **Demo frontend:** `<FRONTEND_DEMO_URL>`
-- **Backend API:** `<BACKEND_DEMO_URL>/api`
-- **Source code:** `<REPOSITORY_URL>`
+- **Demo frontend:** [https://abc-test-seven.vercel.app/](https://abc-test-seven.vercel.app/)
+- **Backend API:** [https://abc-test-api.onrender.com](https://abc-test-api.onrender.com)
 
 Luồng kiểm tra đề xuất:
 
