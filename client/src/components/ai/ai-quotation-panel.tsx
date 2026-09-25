@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Sparkles, Bot, AlertCircle, RefreshCw, Wand2 } from "lucide-react";
+import { Sparkles, Bot, AlertCircle, RefreshCw } from "lucide-react";
 import {
   Card,
   CardContent,
