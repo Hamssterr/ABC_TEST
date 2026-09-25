@@ -4,6 +4,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ScheduleModule } from '@nestjs/schedule';
 import dotenv from 'dotenv';
 import { AppConfigModule } from './config/app-config.module.js';
+import { AppController } from './app.controller.js';
 import { createTypeOrmOptions } from './database/data-source.js';
 import { CustomersModule } from './modules/customers/customers.module.js';
 import { ProductsModule } from './modules/products/products.module.js';
@@ -38,6 +39,7 @@ const typeOrmImports = process.env.DATABASE_URL
     ProcessingJobsModule,
     AiModule,
   ],
+  controllers: [AppController],
   providers: [],
 })
 export class AppModule {}
