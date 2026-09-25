@@ -4,7 +4,7 @@ import type { CreateQuotationDraftInput, QuotationDraft } from '@/types/ai'
 
 /**
  * Sends a raw quotation request to the AI assistant to parse into a quotation draft.
- * Sets a 35s timeout to allow Gemini AI processing while adhering to server-side timeout limits.
+ * Sets a 120s (2 minutes) timeout to allow Gemini AI processing while adhering to server-side timeout limits.
  */
 export async function createQuotationDraft(
   input: CreateQuotationDraftInput
@@ -12,7 +12,7 @@ export async function createQuotationDraft(
   const response = await apiClient.post<ApiResponse<QuotationDraft>>(
     '/ai/quotation-draft',
     input,
-    { timeout: 35000 }
+    { timeout: 120000 }
   )
   return response.data
 }

@@ -19,7 +19,7 @@ export const envValidationSchema = Joi.object({
   SUPABASE_STORAGE_BUCKET: Joi.string().default('quotation-files'),
   GEMINI_API_KEY: Joi.string().allow('').optional(),
   GEMINI_MODEL: Joi.string().allow('').optional(),
-  AI_REQUEST_TIMEOUT_MS: Joi.number().positive().default(15000),
+  AI_REQUEST_TIMEOUT_MS: Joi.number().positive().default(120000),
 });
 
 export function validateEnv(

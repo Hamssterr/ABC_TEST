@@ -66,7 +66,7 @@ describe('Live AI Quotation Draft Integration', () => {
           rawRequest:
             'Cần báo giá 2 chiếc Laptop Workstation và 3 Màn hình 27 inch 4K. Giao tại 123 Hà Nội. Thanh toán sau 15 ngày.',
         },
-        { timeout: 35000 }
+        { timeout: 120000 }
       )
 
       expect(response.status).toBe(200)

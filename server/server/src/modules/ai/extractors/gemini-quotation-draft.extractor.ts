@@ -55,7 +55,7 @@ export class GeminiQuotationDraftExtractor implements QuotationDraftExtractor {
     const model = this.configService.get<string>('GEMINI_MODEL')?.trim();
     const timeoutMs = this.configService.get<number>(
       'AI_REQUEST_TIMEOUT_MS',
-      15000,
+      120000,
     );
 
     if (!model) {
