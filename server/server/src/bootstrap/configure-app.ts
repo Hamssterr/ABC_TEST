@@ -6,8 +6,9 @@ import { LoggingInterceptor } from '../common/interceptors/logging.interceptor.j
 
 export function configureApp(app: INestApplication): void {
   const configService = app.get(ConfigService);
-  const frontendUrl =
-    configService.get<string>('FRONTEND_URL') || 'http://localhost:5173';
+  const frontendUrl = (
+    configService.get<string>('FRONTEND_URL') || 'http://localhost:5173'
+  ).replace(/\/+$/, '');
 
   app.setGlobalPrefix('api');
   app.use(helmet());
